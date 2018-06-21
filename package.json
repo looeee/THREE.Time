@@ -1,0 +1,28 @@
+{
+  "name": "three-time",
+  "version": "0.9.0",
+  "description": "Drop in replacement for THREE.Clock with added features",
+  "main": "Time.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/looeee/npm-three-time.git"
+  },
+  "keywords": [
+    "timing",
+    "stopwatch",
+    "threejs",
+    "webgl",
+    "clock",
+    "time",
+    "timer"
+  ],
+  "author": "Lewy Blue <welcome@discoverthreejs.com> (https://discoverthreejs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/looeee/npm-three-time/issues"
+  },
+  "homepage": "https://github.com/looeee/npm-three-time#readme"
+}

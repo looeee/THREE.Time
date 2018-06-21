@@ -1,4 +1,4 @@
-# Three-time module by Discover three.js
+# Three-time module by [Discover three.js](https://discoverthreejs.com/)
 
 Replacement for THREE.CLock with some extra features and cleaner syntax. The main extra feature is that you can set the Timescale, allowing for slow motion effects in your animations.
 

@@ -1,5 +1,10 @@
 # Three-time module by [Discover three.js](https://discoverthreejs.com/)
 
+[![Latest NPM release][npm-badge]][npm-badge-url]
+[![License][license-badge]][license-badge-url]
+[![Dependencies][dependencies-badge]][dependencies-badge-url]
+[![Dev Dependencies][devDependencies-badge]][devDependencies-badge-url]
+
 Replacement for THREE.CLock with some extra features and cleaner syntax. The main extra feature is that you can set the Timescale, allowing for slow motion effects in your animations.
 
 Note that there is nothing actually related to three.js in the code, so you can use this in any application that needs a simple timer function.

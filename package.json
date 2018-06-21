@@ -3,6 +3,7 @@
   "version": "0.9.2",
   "description": "Drop in replacement for THREE.Clock with added features, including time scaling",
   "main": "build/index.js",
+  "jsnext:main": "src/index.js",
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build"
@@ -22,6 +23,7 @@
   ],
   "author": "Lewy Blue <welcome@discoverthreejs.com> (https://discoverthreejs.com)",
   "license": "MIT",
+  "homepage": "https://discoverthreejs.com/",
   "bugs": {
     "url": "https://github.com/looeee/npm-three-time/issues"
   },

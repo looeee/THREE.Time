@@ -4,6 +4,7 @@
   "description": "Drop in replacement for THREE.Clock with added features, including time scaling",
   "main": "build/index.js",
   "jsnext:main": "src/index.js",
+  "module": "src/index.js",
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build"
@@ -27,7 +28,6 @@
   "bugs": {
     "url": "https://github.com/looeee/npm-three-time/issues"
   },
-  "homepage": "https://github.com/looeee/npm-three-time#readme",
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",

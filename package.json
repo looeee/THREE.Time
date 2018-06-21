@@ -1,6 +1,6 @@
 {
   "name": "three-time",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Drop in replacement for THREE.Clock with added features",
   "main": "Time.js",
   "scripts": {

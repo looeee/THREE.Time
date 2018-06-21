@@ -1,10 +1,11 @@
 {
   "name": "three-time",
   "version": "0.9.1",
-  "description": "Drop in replacement for THREE.Clock with added features",
-  "main": "Time.js",
+  "description": "Drop in replacement for THREE.Clock with added features, including time scaling",
+  "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node build.js",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,15 @@
   "bugs": {
     "url": "https://github.com/looeee/npm-three-time/issues"
   },
-  "homepage": "https://github.com/looeee/npm-three-time#readme"
+  "homepage": "https://github.com/looeee/npm-three-time#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "rollup": "^0.59.4",
+    "rollup-plugin-babel": "^3.0.4",
+    "watch": "^1.0.2"
+  }
 }

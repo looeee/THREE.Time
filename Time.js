@@ -7,24 +7,24 @@
 module.exports = function Time() {
 
 	// Keep track of time when pause() was called
-  let _pauseTime;
+  var _pauseTime;
 
 	// Keep track of time when delta was last checked
-  let _lastDelta = 0;
+  var _lastDelta = 0;
 
 	// Hold the time when start() was called
 	// There is no point in exposing this as it's essentially a random number
 	// and will be different depending on whether performance.now or Date.now is used
-  let _startTime = 0;
+  var _startTime = 0;
 
   this.running = false;
   this.paused = false;
 
 	// The scale at which the time is passing. This can be used for slow motion effects.
-  let _timeScale = 1.0;
+  var _timeScale = 1.0;
 	// Keep track of scaled time across scale changes
-  let _totalTimeAtLastScaleChange = 0;
-  let _timeAtLastScaleChange = 0;
+  var _totalTimeAtLastScaleChange = 0;
+  var _timeAtLastScaleChange = 0;
 
   Object.defineProperties( this, {
 
@@ -70,7 +70,7 @@ module.exports = function Time() {
 
       get() {
 
-        const diff = ( this.now - _timeAtLastScaleChange ) * this.timeScale;
+        var diff = ( this.now - _timeAtLastScaleChange ) * this.timeScale;
 
         return ( this.running ) ? _totalTimeAtLastScaleChange + diff : 0;
 
@@ -83,7 +83,7 @@ module.exports = function Time() {
 
       get() {
 
-        const diff = this.now - _lastDelta;
+        var diff = this.now - _lastDelta;
         _lastDelta = this.now;
 
         return diff;
@@ -109,7 +109,7 @@ module.exports = function Time() {
 
     if ( this.paused ) {
 
-      const diff = ( this.now - _pauseTime );
+      var diff = ( this.now - _pauseTime );
 
       _startTime += diff;
       _lastDelta += diff;

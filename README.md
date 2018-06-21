@@ -2,6 +2,8 @@
 
 Replacement for THREE.CLock with some extra features and cleaner syntax. The main extra feature is that you can set the Timescale, allowing for slow motion effects in your animations.
 
+Note that there is nothing actually related to three.js in the code, so you can use this in any application that needs a simple timer function.
+
 ## Installation
 
   `npm install three-time`

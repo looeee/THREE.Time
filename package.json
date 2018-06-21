@@ -1,10 +1,8 @@
 {
   "name": "three-time",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Replacement for THREE.Clock with added features, including time scaling",
   "main": "build/index.js",
-  "jsnext:main": "src/index.js",
-  "module": "src/index.js",
   "scripts": {
     "build": "node build.js",
     "prepublish": "npm run build"
